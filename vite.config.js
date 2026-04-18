@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  // Esto es para que GitHub Pages sepa en qué subcarpeta está tu app
-  base: '/clima-openweather/', 
+  plugins: [react()],
+  base: '/', 
 })
